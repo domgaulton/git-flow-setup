@@ -41,3 +41,8 @@ This is needed for your first PR to manage it against develop
 
 - `git flow feature start [name-of-feature](1) [develop](2)`
 - Where 1 is feature name and 2 is what to branch from (develop is default with git-flow)
+
+## 5. Pull Request
+
+- When you commit and push terminal will give you a pull request URL e.g. https://github.com/domgaulton/git-flow-setup/pull/new/feature/git-flow-init-readme
+- Make sure you select the PR against develop (not master) as we can manage these releases to develop and later to master
