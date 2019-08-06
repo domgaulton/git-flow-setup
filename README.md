@@ -50,6 +50,21 @@ This is needed for your first PR to manage it against develop
 ## 6. Release branch
 
 - Once develop has acquired enough features for a release (or a predetermined release date is approaching), you fork a release branch off of develop.
-- Start release branch `git flow release start 0.1.0`
-- Publish release branch `git flow release publish 0.1.0` so that other developers can merge to it
-- Once you have files ready for `master` push above and create PR with github then merge
+- Start release branch `git flow release start X.X.X`
+- Publish release branch `git flow release publish X.X.X` so that other developers can merge to it
+- Once you have files ready for `master` and `develop` type `git flow release finish '0.2.0'` (note the single quote marks)
+- This will trigger VIM text editor. Type `i` to start typing, then quit by pressing `esc` and typing `:wq` then enter
+
+```
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by X commits.
+  (use "git push" to publish your local commits)
+Deleted branch release/X.X.X (was 9548701).
+
+Summary of actions:
+- Latest objects have been fetched from 'origin'
+- Release branch has been merged into 'master'
+- The release was tagged 'X.X.X'
+- Release branch has been back-merged into 'develop'
+- Release branch 'release/X.X.X' has been deleted
+```
