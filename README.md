@@ -52,4 +52,4 @@ This is needed for your first PR to manage it against develop
 - Once develop has acquired enough features for a release (or a predetermined release date is approaching), you fork a release branch off of develop.
 - Start release branch `git flow release start 0.1.0`
 - Publish release branch `git flow release publish 0.1.0` so that other developers can merge to it
-- Finish and merge to master and develop `git flow release finish RELEASE`
+- Once you have files ready for `master` push above and create PR with github then merge
